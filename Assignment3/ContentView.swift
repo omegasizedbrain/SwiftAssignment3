@@ -92,6 +92,9 @@ struct ContentView: View {
                 Text("Stop 1 -> Stop 2").tag(2)
             }
             Button("Search"){
+                route = nil
+                route2 = nil
+                route3 = nil
                 Task{
                     if(routeOption == 0){
                         await showRouteStartToDest()

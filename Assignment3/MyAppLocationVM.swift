@@ -27,7 +27,6 @@ class MyAppLocationManagerVM : NSObject, CLLocationManagerDelegate, ObservableOb
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last{
-            print("Location \(location.coordinate.latitude), \(location.coordinate.longitude)")
             curLocation = location.coordinate
         }
     }
